@@ -25,6 +25,5 @@ Rails.application.routes.draw do
   # Password reset
   resources :password_resets, only: %i[new create edit update]
   
-  # posts
-  resources :posts
+  resources :posts, only: [:new, :create, :index]
 end

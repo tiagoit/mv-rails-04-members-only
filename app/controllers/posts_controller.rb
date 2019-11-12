@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before :logged_in_user, only: [:new, :create]
+  before_action :logged_in_user, only: [:new, :create]
 
   def index; end
 
@@ -10,10 +10,10 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.user_id = current_user.id
-    
+
     if @post.save
       flash[:success] = "Post successfully created"
-      redirect_to @post
+      redirect_to posts_path
     else
       render 'new'
     end
