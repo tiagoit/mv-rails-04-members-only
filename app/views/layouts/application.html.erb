@@ -3,7 +3,7 @@
   <%= render 'layouts/head' %>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
+    <div class="container mt-5">
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
       <% end %>

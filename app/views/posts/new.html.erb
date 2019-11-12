@@ -1,0 +1,16 @@
+<% provide(:title, "New Post") %>
+<h1 class="">New post</h1>
+
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <%= form_for(:post, url: posts_path) do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control" %>
+
+      <%= f.label :content %>
+      <%= f.text_area :content, class: "form-control" %>
+
+      <%= f.submit :submit, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
