@@ -3,9 +3,21 @@ class PostsController < ApplicationController
 
   def index; end
 
-  def new; end
+  def new
+    @post = Post.new
+  end
 
-  def create; end
+  def create
+    @post = Post.new(post_params)
+    @post.user_id = current_user.id
+    
+    if @post.save
+      flash[:success] = "Post successfully created"
+      redirect_to @post
+    else
+      render 'new'
+    end
+  end
 
   private
 
@@ -16,5 +28,9 @@ class PostsController < ApplicationController
       flash[:danger] = "Please log in"
       redirect_to login_url
     end
+  end
+  
+  def post_params
+    params.require(:post).permit(:title, :content)
   end
 end
