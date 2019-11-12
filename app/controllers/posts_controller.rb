@@ -31,7 +31,7 @@ class PostsController < ApplicationController
       redirect_to login_path
     end
   end
-  
+
   def post_params
     params.require(:post).permit(:title, :content)
   end
