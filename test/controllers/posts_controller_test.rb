@@ -21,5 +21,4 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_select 'h3.post', count: 1
     assert_select 'span.author', count: 1
   end
-
 end
