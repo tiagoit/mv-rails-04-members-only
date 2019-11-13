@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create!(name:  "Example User",
+User.create!(id: 1,
+             name:  "Example User",
              email: "example@railstutorial.org",
              password:              "foobar",
              password_confirmation: "foobar",
@@ -24,3 +25,7 @@ User.create!(name:  "Example User",
                activated: true,
                activated_at: Time.zone.now)
 end
+
+Post.create!(title:  "Example Post",
+             content: "Example content",
+             user_id: 1)

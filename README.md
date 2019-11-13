@@ -36,6 +36,16 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ rails server
 ```
+
+To test the app you can signup or seed the db and use the following one 
+```
+$ rails db:seed
+```
+```
+login: example@railstutorial.org 
+paswword: foobar
+```
+
 TODO:
 ```
 (Live demo)[https//.herokuapp.com]
