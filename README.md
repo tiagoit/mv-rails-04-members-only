@@ -1,24 +1,58 @@
-# README
+# Members only application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the an assignment application for
+[*The Odin Project:
+Ruby on Rails - Authentication Project*](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication)
 
-Things you may want to cover:
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started with the app, clone the repo and then install the needed gems:
 
-* Configuration
+```
+$ bundle install --without production
+```
 
-* Database creation
+Install yarn depencencies.
 
-* Database initialization
+```
+$ yarn install --check-files
+```
 
-* How to run the test suite
+Next, migrate the database:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails db:migrate
+```
 
-* Deployment instructions
+Finally, run the test suite to verify that everything is working correctly:
 
-* ...
+```
+$ rails test
+```
+
+If the test suite passes, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+
+To test the app you can signup or seed the db and use the following one 
+```
+$ rails db:seed
+```
+```
+login: example@railstutorial.org 
+paswword: foobar
+```
+
+TODO:
+```
+(Live demo)[https//.herokuapp.com]
+```
+
+
+### Authors
+
+- **Oscar De La Lanza** - [@oscardelalanza](https://github.com/oscardelalanza)
+- **Tiago Ferreira** - [@ferreirati](https://github.com/ferreirati)
