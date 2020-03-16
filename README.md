@@ -56,3 +56,5 @@ TODO:
 
 - **Oscar De La Lanza** - [@oscardelalanza](https://github.com/oscardelalanza)
 - **Tiago Ferreira** - [@ferreirati](https://github.com/ferreirati)
+
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/tiagoit-dev/) or drop me a line at <tiagoitferreira@gmail.com>.
